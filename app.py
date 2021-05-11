@@ -33,15 +33,15 @@ def main():
    <div class="" style="background-color:Brown;" >
    <div class="clearfix">           
    <div class="col-md-12">
-   <center><marquee><h3>Deploy by Tarun Kumar</h3></marquee><p style="font-size:40px;color:black;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
-   <center><p style="font-size:30px;color:black;margin-top:10px;">Department of Computer Engineering</p></center> 
+   <center><marquee><h3>Deploy by Ekta Sharma</h3></marquee><p style="font-size:40px;color:black;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+   <center><p style="font-size:30px;color:black;margin-top:10px;">Random Forest</p></center> 
    <center><p style="font-size:25px;color:black;margin-top:10px;"Machine Learning Lab Experiment</p></center> 
    </div>
    </div>
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("Item Purchase Prediction using Logistic Classification")
+    st.header("Item Purchase Prediction using Rendom Forest")
     
     UserID = st.text_input("UserID","")
     
@@ -56,8 +56,8 @@ def main():
       st.success('Model has predicted {}'.format(result))
       
     if st.button("About"):
-      st.subheader("Developed by Deepak Moud")
-      st.subheader("Head , Department of Computer Engineering")
+      st.subheader("Developed by Tarun Kumar")
+      st.subheader("Student of Poornima Group Of Institutions, Jaipur")
 
 if __name__=='__main__':
   main()
