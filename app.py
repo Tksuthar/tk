@@ -22,15 +22,15 @@ def predict_note_authentication(UserID, Gender,Age,EstimatedSalary):
   output= model.predict(sc.transform([[Gender,Age,EstimatedSalary]]))
   print("Purchased", output)
   if output==[1]:
-    prediction="Item will be purchased"
+    prediction="Don not close customer bank account"
   else:
-    prediction="Item will not be purchased"
+    prediction="Close customer bank account"
   print(prediction)
   return prediction
 def main():
     
     html_temp = """
-   <div class="" style="background-color:Brown;" >
+   <div class="" style="background-color:blue;" >
    <div class="clearfix">           
    <div class="col-md-12">
    <center><marquee><h3>Deploy by Ekta Sharma</h3></marquee><p style="font-size:40px;color:black;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
@@ -41,9 +41,9 @@ def main():
    </div>
    """
     st.markdown(html_temp,unsafe_allow_html=True)
-    st.header("Item Purchase Prediction using Rendom Forest")
+    st.header("Bank Customer Acount Need to Close or Remain Open Prediction using Rendom Forest")
     
-    UserID = st.text_input("UserID","")
+    UserID = st.text_input("Account Number","")
     
     #Gender1 = st.select_slider('Select a Gender Male:1 Female:0',options=['1', '0'])
     Gender1 = st.number_input('Insert Gender Male:1 Female:0')
@@ -56,7 +56,7 @@ def main():
       st.success('Model has predicted {}'.format(result))
       
     if st.button("About"):
-      st.subheader("Developed by Tarun Kumar")
+      st.subheader("Developed by Ekta Sharma")
       st.subheader("Student of Poornima Group Of Institutions, Jaipur")
 
 if __name__=='__main__':
