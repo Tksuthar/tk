@@ -33,8 +33,7 @@ def main():
    <div class="" style="background-color:Brown;" >
    <div class="clearfix">           
    <div class="col-md-12">
-   <marquee><h3>Deploy by Tarun Kumar</h3></marquee>
-   <center><p style="font-size:40px;color:black;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+   <center><marquee><h3>Deploy by Tarun Kumar</h3></marquee><p style="font-size:40px;color:black;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
    <center><p style="font-size:30px;color:black;margin-top:10px;">Department of Computer Engineering</p></center> 
    <center><p style="font-size:25px;color:black;margin-top:10px;"Machine Learning Lab Experiment</p></center> 
    </div>
